@@ -95,6 +95,14 @@ tic-tac-toe/
 
 ---
 
+## **Screenshots**
+<img width="793" alt="Screenshot 2024-11-27 at 7 57 23 PM" src="https://github.com/user-attachments/assets/048fc8cf-b2bc-4df4-949f-3b76c3fc11d4">
+<img width="689" alt="Screenshot 2024-11-27 at 7 58 18 PM" src="https://github.com/user-attachments/assets/7d2dd5b9-3706-46fe-9a86-65cdfcd03b9e">
+
+
+
+---
+
 ## **License**
 
 This project is open-source and available under the [MIT License](LICENSE).
