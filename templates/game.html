@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Tic-Tac-Toe</h1>
+        <h2>{{ player1_name }} (X) vs. {{ player2_name }} (O)</h2>
+
+        <h3>Current Turn: {{ current_player }}</h3>
+
+        <div class="board">
+            {% for cell in range(9) %}
+                <a href="/move/{{ cell }}" class="cell">{{ board[cell] }}</a>
+            {% endfor %}
+        </div>
+
+        {% if game_over %}
+            <div class="match-result">
+                <h3>{{ match_result }}</h3>
+            </div>
+            <div class="game-buttons">
+                <form action="/reset" method="POST">
+                    <button type="submit">Play Again</button>
+                </form>
+                <form action="/new_game" method="POST">
+                    <button type="submit">New Game</button>
+                </form>
+            </div>
+        {% endif %}
+
+        <div class="score-board">
+            <h4>Scores</h4>
+            <p>{{ player1_name }}: {{ player1_score }} | {{ player2_name }}: {{ player2_score }}</p>
+        </div>
+    </div>
+</body>
+</html>
